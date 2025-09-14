@@ -1,0 +1,115 @@
+<?xml version="1.0" ?>
+<robot name="rb1_robot">
+
+    <!-- Define materials for visualization -->
+    <material name="blue">
+        <color rgba="0 0 1 1"/>
+    </material>
+
+    <material name="gray">
+        <color rgba="0.40 0.40 0.40 1"/>
+    </material>
+
+    <material name="red">
+        <color rgba="1 0 0 1"/>
+    </material>
+
+    <!-- Base footprint link -->
+    <link name="base_footprint">
+    </link>
+
+    <!-- Joint connecting base_link and base_footprint -->
+    <!-- TO DO: Set correct joint type -->
+    <joint name="base_link_plate_joint" type="">
+        <!-- TO DO: Define axis (if needed) -->
+        <!-- TO DO: Define origin -->
+        <!-- TO DO: Define parent -->
+        <!-- TO DO: Define child -->
+    </joint>
+
+    <!-- Base link -->
+    <link name="base_link">
+        <!-- TO DO: Add visual tag -->
+        <!-- TO DO: Add collision tag -->
+        <!-- TO DO: Add inertial tag -->
+    </link>
+
+    <!-- Left wheel link -->
+    <link name="left_wheel">
+        <!-- TO DO: Add visual tag -->
+        <!-- TO DO: Add collision tag -->
+        <!-- TO DO: Add inertial tag -->
+    </link>
+
+    <!-- Joint connecting base_link and left_wheel -->
+    <!-- TO DO: Set correct joint type -->
+    <joint name="base_link_left_wheel_joint" type="">
+        <!-- TO DO: Define axis (if needed) -->
+        <!-- TO DO: Define origin -->
+        <!-- TO DO: Define parent -->
+        <!-- TO DO: Define child -->
+    </joint>
+
+    <!-- Right wheel link -->
+    <link name="right_wheel">
+        <!-- TO DO: Add visual tag -->
+        <!-- TO DO: Add collision tag -->
+        <!-- TO DO: Add inertial tag -->
+    </link>
+
+    <!-- Joint connecting base_link and right_wheel -->
+    <!-- TO DO: Set correct joint type -->
+    <joint name="base_link_right_wheel_joint" type="">
+        <!-- TO DO: Define axis (if needed) -->
+        <!-- TO DO: Define origin -->
+        <!-- TO DO: Define parent -->
+        <!-- TO DO: Define child -->
+    </joint>
+
+    <!-- Front caster -->
+    <link name="front_caster">
+        <!-- TO DO: Add visual tag -->
+        <!-- TO DO: Add collision tag -->
+        <!-- TO DO: Add inertial tag -->
+    </link>
+
+    <!-- Joint connecting base_link and front_caster -->
+    <!-- TO DO: Set correct joint type -->
+    <joint name="base_link_front_caster_joint" type="">
+        <!-- TO DO: Define axis (if needed) -->
+        <!-- TO DO: Define origin -->
+        <!-- TO DO: Define parent -->
+        <!-- TO DO: Define child -->
+    </joint>
+
+    <!-- Back caster -->
+    <link name="back_caster">
+        <!-- TO DO: Add visual tag -->
+        <!-- TO DO: Add collision tag -->
+        <!-- TO DO: Add inertial tag -->
+    </link>
+
+    <!-- Joint connecting base_link and back_caster -->
+    <!-- TO DO: Set correct joint type -->
+    <joint name="base_link_back_caster_joint" type="">
+        <!-- TO DO: Define axis (if needed) -->
+        <!-- TO DO: Define origin -->
+        <!-- TO DO: Define parent -->
+        <!-- TO DO: Define child -->
+    </joint>
+
+    <!-- Link representing the front laser scanner -->
+    <!--For this robot, the laser is not visible, so we won't define a body for it. -->
+    <link name="front_laser">
+    </link>
+
+    <!-- Joint connecting base_link and front_laser -->
+    <!-- TO DO: Set correct joint type -->
+    <joint name="base_link_front_laser_joint" type="">
+        <!-- TO DO: Define axis (if needed) -->
+        <!-- TO DO: Define origin -->
+        <!-- TO DO: Define parent -->
+        <!-- TO DO: Define child -->
+    </joint>
+
+</robot>
