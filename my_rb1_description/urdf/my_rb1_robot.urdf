@@ -253,4 +253,22 @@
         <origin xyz="0.25 0.0 0.075" rpy="3.14159265359 0 0"/>
     </joint>
 
+    <!-- Differential Drive Plugin -->
+    <gazebo>
+        <plugin 
+            filename="libignition-gazebo-diff-drive-system.so"
+            name="ignition::gazebo::systems::DiffDrive">
+            <left_joint>base_link_left_wheel_joint</left_joint>
+            <right_joint>base_link_right_wheel_joint</right_joint>
+            <wheel_separation>0.4</wheel_separation>
+            <wheel_radius>0.025</wheel_radius>
+            <odom_publish_frequency>20</odom_publish_frequency>
+            <topic>cmd_vel</topic>
+            <odom_topic>odom</odom_topic>
+            <tf_topic>tf</tf_topic>
+            <frame_id>odom</frame_id>
+            <child_frame_id>base_link</child_frame_id>
+        </plugin>
+    </gazebo>
+
 </robot>
