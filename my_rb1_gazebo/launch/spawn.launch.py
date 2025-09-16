@@ -66,7 +66,7 @@ def generate_launch_description():
             "/imu" + "@sensor_msgs/msg/Imu" + "[ignition.msgs.IMU",
         ],
         remappings=[
-            # there are no remappings for this robot description
+            ("/laser/scan", "/scan"),
         ],
         output="screen",
     )
