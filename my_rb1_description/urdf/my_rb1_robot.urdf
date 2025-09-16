@@ -1,6 +1,74 @@
 <?xml version="1.0" ?>
 <robot name="rb1_robot">
 
+    <!-- Gazebo Color Tags -->
+    <gazebo reference="base_link">
+        <visual>
+            <material> <!-- Black -->
+                <ambient>0.1 0.1 0.1 1.0</ambient>
+                <diffuse>0.1 0.1 0.1 1.0</diffuse>
+                <specular>0.0 0.0 0.0 1.0</specular>
+                <emissive>0.0 0.0 0.0 1.0</emissive>
+            </material>
+        </visual>
+    </gazebo>
+
+    <!-- Gazebo friction and material properties for left_wheel -->
+    <gazebo reference="left_wheel">
+        <collision>
+            <surface>
+                <friction>
+                    <ode>
+                        <mu>1.0</mu>
+                        <mu2>1.0</mu2>
+                    </ode>
+                </friction>
+            </surface>
+        </collision>
+    </gazebo>
+
+    <!-- Gazebo friction and material properties for right_wheel -->
+    <gazebo reference="right_wheel">
+        <collision>
+            <surface>
+                <friction>
+                    <ode>
+                        <mu>1.0</mu>
+                        <mu2>1.0</mu2>
+                    </ode>
+                </friction>
+            </surface>
+        </collision>
+    </gazebo>
+
+    <!-- Gazebo friction and material properties for front_caster -->
+    <gazebo reference="front_caster">
+        <collision>
+            <surface>
+                <friction>
+                    <ode>
+                        <mu>0.0</mu>
+                        <mu2>0.0</mu2>
+                    </ode>
+                </friction>
+            </surface>
+        </collision>
+    </gazebo>
+
+    <!-- Gazebo friction and material properties for back_caster -->
+    <gazebo reference="back_caster">
+        <collision>
+            <surface>
+                <friction>
+                    <ode>
+                        <mu>0.0</mu>
+                        <mu2>0.0</mu2>
+                    </ode>
+                </friction>
+            </surface>
+        </collision>
+    </gazebo>
+
     <!-- Define materials for visualization -->
     <material name="blue">
         <color rgba="0 0 1 1"/>
@@ -37,7 +105,7 @@
             <geometry>
                 <cylinder radius="0.25" length="0.30"/>
             </geometry>
-            <material name="blue"/>
+            <material name="Black"/>
         </visual>
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0"/>
