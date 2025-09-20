@@ -137,7 +137,7 @@
     <joint name="base_link_front_caster_joint" type="fixed">
         <parent link="base_link"/>
         <child link="front_caster"/>
-        <origin xyz="-0.1 0.0 -0.15" rpy="0 0 0"/>
+        <origin xyz="0.1 0.0 -0.15" rpy="0 0 0"/>
     </joint>
 
     <!-- Back caster -->
@@ -170,12 +170,16 @@
     <joint name="base_link_back_caster_joint" type="fixed">
         <parent link="base_link"/>
         <child link="back_caster"/>
-        <origin xyz="0.1 0.0 -0.15" rpy="0 0 0"/>
+        <origin xyz="-0.1 0.0 -0.15" rpy="0 0 0"/>
     </joint>
 
     <!-- Link representing the front laser scanner -->
     <!--For this robot, the laser is not visible, so we won't define a body for it. -->
     <link name="front_laser">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.5"/>
+        </inertial>
     </link>
 
     <!-- Joint connecting base_link and front_laser -->
