@@ -1,0 +1,3 @@
+int32 degrees    # Request field (input): how many degrees to rotate the robot
+---
+string result    # Response field (output): the result of the service call
