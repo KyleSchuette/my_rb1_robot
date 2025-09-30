@@ -175,6 +175,12 @@
     <!-- Link representing the front laser scanner -->
     <!--For this robot, the laser is not visible, so we won't define a body for it. -->
     <link name="front_laser">
+        <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.5"/>
+        <inertia ixx="0.0002083" ixy="0" ixz="0"
+                iyy="0.0002083" iyz="0" izz="0.0002083"/>
+        </inertial>
     </link>
 
     <!-- Joint connecting base_link and front_laser -->

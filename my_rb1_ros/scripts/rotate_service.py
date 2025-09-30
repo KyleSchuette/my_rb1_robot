@@ -37,9 +37,6 @@ def rotate_callback(request):
     start_yaw = current_yaw
     desired_yaw = start_yaw + target_radians
 
-    twist = Twist()
-    twist.angular.z = 0.3 if target_radians > 0 else -0.3  # direction of turn
-
     # Normalize angles into [-pi, pi]
     def normalize_angle(angle):
         return math.atan2(math.sin(angle), math.cos(angle))
@@ -60,7 +57,7 @@ def rotate_callback(request):
         desired_yaw = start_yaw + target_radians
 
         twist = Twist()
-        twist.angular.z = 0.3 if target_radians > 0 else -0.3
+        twist.angular.z = 0.8 if target_radians > 0 else -0.8
 
         def normalize_angle(angle):
             return math.atan2(math.sin(angle), math.cos(angle))
